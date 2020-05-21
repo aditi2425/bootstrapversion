@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UNSEEN TREASURE</title>
+	<!--link to font-->
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+	<!--link to heading font-->
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lora&display=swap" rel="stylesheet">
+	<!--bootstrap language-->
+	 <meta charset="utf-8">
+	 <!--making responsiveness-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1"><!--for mobile-->
+	 <!--bootstrap link-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	 <!--link to css page-->
+	 <link rel="stylesheet" type="text/css" href="bg.css">
+ </head>
+<body>
+    <header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-4 pb-4" style="font-size:20px;">
+	<a class="navbar-brand" href="#">Unseen Treasure</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item ">
+		        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="about.html">About Us</a>
+		      </li>
+		      <li class="nav-item">
+		      	<a class="nav-link" href="login.html">Login</a>
+		      </li>
+		    </ul>
+		  </div>
+     </nav>
+		<h1 class="display-3" style="color: #330000;font-family: Balsamiq Sans; background-image: url(black.jpg); background-size:100%;">Unseen Treasure</h1>
+		<!--script for alert-->
+		<script type="text/javascript">
+                  function fn1(){ alert("First login/signsin");}
+           </script>	
+   </header>
+<!--navbar ends-->
+     <section>
+     	<div class="container-fluid">
+     		<!--heading-->
+     		<h1 class="display-4 text-center pt-5" style="font-family:'Lora', serif; color:white;">Rare Species Found In India</h1>
+     	    <hr class="w-50">
+     	<div class="row">
+     		<div class="col-lg-6 col-md-6 col-12 " style="font-size:25px; color:#9AE4EF;">
+     			<ul>
+     				<li>Learn about the unique and interesting behaviour of rare species.</li>
+		    		<li>Understand how important is to protect them.</li>
+		    		<li>If you see any animal or bird around you which you think might be rare, feel free to post on our website.</li>
+		    		<li>You can upload image and the description analysed by you of the animal or bird.</li>
+		    	</ul>
+		    </div>
+		    <div class="col-lg-6 col-md-6 col-12">
+		    	<!--button when clicked will take to pic page-->
+		    	<form action="pic.html" target="_blank">
+	                    <button id="first" type="submit">CLICK TO VIEW RARE SPECIES</button>
+	           </form>
+	         </div>
+	     </div>
+	 </div>
+	 <div class="container">
+	     <div class="row">
+	     	<div class="col-lg-6 col-md-6 col-12 pt-5">
+	     		<!--button for uploading file-->
+	     		<form>
+	     			<button type="button" id="second" onclick="fn1()">UPLOAD FILE</button>
+	     		</form>
+	     	</div>
+	     	<div class="col-lg-6 col-md-6 col-12 pt-5">
+	     		<!--button for uploaded files-->
+	     		<form action="uploaded.html" target="_blank">
+	     			<button type="submit" id="third">NEWLY UPLOADED SPECIES</button>
+	     		</form>
+	     	</div>
+	     </div>
+	 </div>
+	</section>
+	<!--section ends-->
+	<footer class="text-center pt-3 pb-3 mt-4" style="background-color:black; color:white;">All rights reserved.<br>
+	
+	    Made with &hearts; in India.
+	</footer>
+
+		  
+  <!--scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

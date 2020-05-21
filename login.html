@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!--javascript for password and username-->
+<script type="text/javascript">
+			function fn(){
+			var red = document.getElementById("us");
+			var blue = document.getElementById("pass");
+	if(red.value.trim()=="")//if no values written remain to that page only , trim() used for no blank spaces between.
+		  {alert("Blank Username.");
+		     return false;}
+		else if(blue.value.trim()=="")
+		{
+			alert("Blank Password.");
+			return false;
+		}
+		else if(blue.value.trim().length<5)//if password is less than five characters remain to that page and give an alert.
+	    { alert("Password too short.");
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+</script>
+<!--ends-->
+<style>
+	body{ background-image: url(blue.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+</style>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-4 pb-4" style="font-size:20px;">
+		<a class="navbar-brand" href="#">Unseen Treasure</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item ">
+		        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="about.html">About Us</a>
+		      </li>
+		      </ul>
+		  </div>
+     </nav>
+</header>
+<!--navbar ends-->
+<section>
+ <div class="container-fluid">
+	<h1 class="text-center diaplay-3 pt-5" style="color:black; font-weight: bold;">WELCOME!</h1>
+    <h1 id="un" class="text-center diaplay-3 pt-3" style="color:black; font-weight:bold; text-decoration: underline;">LOGIN PAGE</h1><br><br>
+	<div class="text-center">
+		<form onsubmit="return fn()" action="upload.html" target="_blank"><!--will take to new html document if no blank values-->
+			<input type="text" class="pt-3 pt-3  " style="font-size: 18px;" id="us" placeholder="Username"/>
+			<br><br>
+	        <input type="password" id="pass" class="pt-3 pt-3" style="font-size: 18px;" placeholder="password"/><br>
+	        <label style="color:red;" >Mininmum 5 characters maximum 10.</label>
+	       <br><br>
+	        <button type="submit" class="pt-2 pb-2 " style="font-size:12px; margin-right: 130px; color:black; font-weight: bold;">SUBMIT</button>
+	    </form>
+   </div>
+   <!--log in boxes end-->
+<div class="text-center pt-3">
+    <!--modal for signup button-->
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    NOT SIGNED YET! CLICK ME
+   </button>
+</div>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sign Up</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+				  <div class="form-group">
+				  	<label>Username:</label>
+				  	<input type="text" placeholder="Username" class="form-control">
+				  </div>
+				  <div class="form-group">
+				    <label for="email">Email address:</label>
+				    <input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off">
+				  </div>
+				  <div class="form-group">
+				    <label for="pwd">Password:</label>
+				    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+				  </div>
+
+				  <div class="form-group form-check">
+				    <label class="form-check-label">
+				      <input class="form-check-input" type="checkbox"> Remember me
+				    </label>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Submit</button>
+		   </form>
+	</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    
+        
+      </div>
+    </div>
+  </div>
+  
+   
+
+    </div>
+  </div>
+</section><br><br><br><br>
+
+
+<!--section ends-->
+	<footer class="text-center pt-3 pb-3 mt-4" style="background-color:black; color:white;">All rights reserved.<br>
+	
+	    Made with &hearts; in India.
+	</footer>
+	<!--scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

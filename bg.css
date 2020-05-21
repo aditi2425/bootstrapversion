@@ -1,0 +1,43 @@
+body{
+	background-image: url(green.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+ #first{
+ 	background-color: black;
+ 	color:white;
+ 	background-color: black;
+ 	color:white;
+ 	text-decoration: none;
+ 	border:none;
+ 	border-radius: 15%;
+ 	font-size:20px;
+ }
+ #first:hover{
+ 	color:#F11212;
+ 	text-decoration: none;
+ }
+ #second{
+ 	background-color: black;
+ 	color:#F11212;
+ 	text-decoration: none;
+ 	border:none;
+ 	border-radius: 20%;
+ 	font-size: 18px;
+ 	 }
+ #second:hover{
+ 	color:white;
+ 	text-decoration: none;
+ }
+#third{
+	color:red;
+	background-color: black;
+	border-radius:20%;
+	text-decoration: none;
+	border: none;
+	font-size:18px;
+}
+#third:hover{
+	color:white;
+	text-decoration: none;
+}
